@@ -18,12 +18,10 @@ function Hero() {
             color="text.primary"
             gutterBottom
         >
-            Album layout
+            Products
         </Typography>
         <Typography variant="h5" align="center" color="text.secondary" paragraph>
-            Something short and leading about the collection below—its contents,
-            the creator, etc. Make it short and sweet, but not too short so folks
-            don&apos;t simply skip over it entirely.
+           Search your products and take it!
         </Typography>
       </Container>
     </Box>

@@ -18,7 +18,7 @@ import {
   Select,
   MenuItem
 } from '@mui/material';
-import CameraIcon from '@mui/icons-material/PhotoCamera';
+import CycloneIcon from '@mui/icons-material/Cyclone';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { useEffect } from 'react';
 import { getProducts } from './services/Products';
@@ -111,9 +111,9 @@ const theme = createTheme();
       </Modal>
       <AppBar position="relative">
         <Toolbar>
-          <CameraIcon sx={{ mr: 2 }} />
+          <CycloneIcon sx={{ mr: 2 }} />
           <Typography variant="h6" color="inherit" noWrap>
-            App layout
+            App Products
           </Typography>
         </Toolbar>
       </AppBar>
@@ -174,7 +174,7 @@ const theme = createTheme();
       {/* Footer */}
       <Box sx={{ bgcolor: 'background.paper', p: 6 }} component="footer">
         <Typography variant="h6" align="center" gutterBottom>
-          Footer
+          APP Producs
         </Typography>
         <Typography
           variant="subtitle1"
@@ -182,7 +182,7 @@ const theme = createTheme();
           color="text.secondary"
           component="p"
         >
-          Something here to give the footer a purpose!
+          Your dream become true!
         </Typography>
       </Box>
       {/* End footer */}
