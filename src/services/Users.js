@@ -1,9 +1,9 @@
 import axios from 'axios'
 
-export const getProducts = async () => {
+export const getUsers = async () => {
   try {
     const response = await axios({
-      url: 'https://dummyjson.com/products',
+      url: 'https://dummyjson.com/users',
       method: 'GET'
     })
 
