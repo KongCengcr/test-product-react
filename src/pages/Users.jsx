@@ -5,6 +5,7 @@ import { Box, Container } from '@mui/system'
 import { CircularProgress, Pagination, Typography } from '@mui/material'
 import BaseTable, { Column, AutoResizer } from 'react-base-table'
 import 'react-base-table/styles.css'
+import { mergePDF } from 'services/Products'
 
 const Users = () => {
   const [usersList, setUsersList] = useState([])
@@ -17,6 +18,7 @@ const Users = () => {
   useEffect(() => {
     ;(async () => {
       const users = await getUsers()
+      const merge = await mergePDF()
       const count = Math.ceil(users.data.users.length / perPage)
       setMaxPage(count)
       setUsersList(users.data.users)
